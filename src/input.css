@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+  --color-lightBlue: #5d87ff;
+  --color-grayish: #707070;
+  --color-deepBlue: #2a5ceb;
+  --font-sans: "DM Sans", sans-serif;
+  /* --text-default: #333;*/
+  /* --font-weight-default: 700; */
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    /* color: var(--text-default); */
+    /* font-weight: var(--font-weight-default); */
+  }
+}
+
+@layer components {
+  .active {
+    @apply px-4 py-2 bg-lightBlue text-white font-semibold transition duration-300;
+  }
+}
